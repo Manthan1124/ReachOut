@@ -1,0 +1,406 @@
+<html>
+
+<head><div style="border: 1px solid black;"><h2><center><u>बस स्टँड सर्वेक्षण फॉर्म</u></center></h2>
+<h3><center><u>सर्वेक्षण फॉर्म</u></center></h3>
+</head>
+<body>
+
+<div class="bg"></div>
+
+</head>
+
+<form>
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button class="dropdown"><b><i>बसस्थानकाचे शहर/नगर/गावाचे नाव:*</i></b></button>
+<select id="district_id"> 
+<option value="">Select Districts</option>
+<option value="1" data-type="single">AHILYADEVI NAGAR</option>  
+<option value="2" data-type="single" >AKOLA</option>
+<option value="3" data-type="single">AMRAVATI</option>
+<option value="4" data-type="single">BEED</option>
+<option value="5" data-type="single">BHANDARA</option>
+<option value="6" data-type="single">BULDHANA</option>
+<option value="7" data-type="single">CHANDRAPUR</option>
+<option value="8" data-type="single">DHARASHIV</option>
+<option value="9" data-type="single">DHULE</option>
+<option value="10" data-type="single">GADCHIROLI</option>
+<option value="11" data-type="single">JALGAON</option>
+<option value="12" data-type="single">JALNA</option>
+<option value="13" data-type="single">KOLHAPUR</option>
+<option value="14" data-type="single">LATUR</option>
+<option value="15" data-type="single">MUMBAI</option>
+<option value="16" data-type="single">NAGPUR</option>
+<option value="17" data-type="single">NANDED</option>
+<option value="18" data-type="single">Nashik</option>
+<option value="19" data-type="single">PALGHAR</option>
+<option value="20" data-type="single">PARBHANI</option>
+<option value="21" data-type="single">PUNE</option>
+<option value="22" data-type="single">RAIGAD</option>
+<option value="23" data-type="single">RATNAGIRI</option>
+<option value="24" data-type="single">SANGLI</option>
+<option value="25" data-type="single">SATARA</option>
+<option value="26" data-type="single">SINDHUDURG</option>
+<option value="27" data-type="single">SOLAPUR</option>
+<option value="28" data-type="single">THANE</option>
+<option value="29" data-type="single">WARDHA</option>
+<option value="30" data-type="single">YAVATMAL</option>
+
+</select>
+</div>
+</div>
+</div>
+<br>
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button class="dropdown"><b><i>प्रदेश:*</i></b></button>
+<select id="region_id">
+								<option value="">Select Region</option>
+								<option value="1" data-type="" data-select2-id="select2-data-130-wik1">North Suburb</option>
+                                                                <option value="2" data-type="" data-select2-id="select2-data-131-io99">Suburban </option>
+                                                                <option value="3" data-type="" data-select2-id="select2-data-132-vz7u">HQ</option>
+                                                                <option value="4" data-type="" data-select2-id="select2-data-133-e6y0">Konkan</option>
+                                                                <option value="5" data-type="" data-select2-id="select2-data-134-1tow">West Maharashtra</option>
+                                                                <option value="6" data-type="" data-select2-id="select2-data-135-y59l">Vidharbha</option>
+                                                                <option value="7" data-type="" data-select2-id="select2-data-136-7tch">Khandesh</option>
+                                                                <option value="8" data-type="" data-select2-id="select2-data-137-6tgu">Marathwada</option>
+  </select>
+
+
+</select>
+</div>
+</div>
+</div>
+<br>
+<div class="col-md-3 mb-3">
+<label class="form-label">Search</label>
+<input type="text" class="form-control" id="search" name="search" placeholder="Search Here ...." oninput="handleKeyPress(event)" fdprocessedid="9lh8rc">
+</div>
+
+<br>
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button class="dropdown"><b><i>हे बसस्थानक कोणत्या झोनमध्ये येते*</i></b></button>
+<select id="zone_id">
+								<option value="">Select Zone</option>
+								<option value="1" data-type="" data-select2-id="select2-data-130-wik1">Zone A</option>
+                                                                <option value="2" data-type="" data-select2-id="select2-data-131-io99">Zone B</option>
+                                                                <option value="3" data-type="" data-select2-id="select2-data-132-vz7u">Zone C</option>
+                                                                <option value="4" data-type="" data-select2-id="select2-data-133-e6y0">Zone D</option>
+                                                                
+
+</select>
+</div>
+</div>
+</div>
+<br>
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>बसस्थानकाचे ठिकाण• बसस्थानक येथे आहे का:</i></b></button>
+<br>
+<br>
+<input type="radio" id="place" name="place" value="शहर/नगर/गावाच्या मध्यभागी">
+<label for="place"> शहर/नगर/गावाच्या मध्यभागी</label><br>
+<input type="radio" id="place" name="place" value="निवासी क्षेत्रात">
+<label for="place"> निवासी क्षेत्रात</label><br>
+<input type="radio" id="place" name="place" value="दुर्गम भागात">
+<label for="place"> दुर्गम भागात</label><br>                                                                
+<input type="radio" id="place" name="place" value="व्यावसायिक/बाजार क्षेत्राजवळ">
+<label for="place"> व्यावसायिक/बाजार क्षेत्राजवळ</label><br>                                                                
+</br></br>
+</select>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button class="dropdown"><b><i>कृपया स्टँडवरील स्क्रीनची संख्या नमूद करा*</i></b></button>
+<select id="number_id"> 
+<option value="">Select Number</option>
+<option value="1" data-type="single">1</option>  
+<option value="2" data-type="single">2</option>
+<option value="3" data-type="single">3</option>
+<option value="4" data-type="single">4</option>
+<option value="5" data-type="single">5</option>
+<option value="6" data-type="single">6</option>
+<option value="7" data-type="single">7</option>
+<option value="8" data-type="single">8</option>
+
+
+</select>
+</div>
+</div>
+</div>
+</br>
+
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>स्क्रीन आवश्यकता • बसस्थानकावर अधिक स्क्रीन्सची गरज आहे असे तुम्हाला वाटते का? *</i></b></button>
+<br></br>
+
+<input type="radio" id="place" name="place" value="होय">
+<label for="place">होय</label><br>
+<input type="radio" id="place" name="place" value="नाही">
+<label for="place"> नाही</label><br>
+<input type="radio" id="place" name="place" value="खात्री नाही">
+<label for="place"> खात्री नाही</label><br>
+                                             
+</br>
+</select>
+</div>
+</div>
+</div>
+
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>अतिरिक्त स्क्रीन आवश्यक असण्याची कारणे:*</i></b></button> <br>
+<br>
+<input type="text" class="form-control" id="Your Answer" name="answer" placeholder="Type Here ...." oninput="handleKeyPress(event)" fdprocessedid="9lh8rc">
+
+</div>
+</br>
+</div>
+</div>
+
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>तुम्हाला काही स्क्रीन काढण्याची गरज आहे असे वाटते का?*</i></b></button>
+<br></br>
+
+<input type="radio" id="place" name="place" value="होय">
+<label for="place">होय</label><br>
+<input type="radio" id="place" name="place" value="नाही">
+<label for="place"> नाही</label><br>
+                                             
+</br>
+</select>
+</div>
+</div>
+</div>
+
+
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>स्क्रीन काढून टाकण्याची कारणे:*</i></b></button>
+<br></br>
+
+<input type="text" class="form-control" id="Your Answer" name="answer" placeholder="Type Here ...." oninput="handleKeyPress(event)" fdprocessedid="9lh8rc">
+</br>
+</select>
+</div>
+</div>
+</div>
+
+<br>
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>बसस्थानकाची अवस्था तुम्ही बसस्थानकाच्या एकूण स्थितीचे मूल्यांकन कसे कराल?*</i></b></button>
+<br></br>
+
+<input type="radio" id="place" name="place" value="उत्कृष्ट">
+<label for="place">उत्कृष्ट</label><br>
+<input type="radio" id="place" name="place" value="चांगले">
+<label for="place"> चांगले</label><br>
+<input type="radio" id="place" name="place" value="दीन">
+<label for="place"> दीन</label><br>
+<input type="radio" id="place" name="place" value="अतिशय दीन">
+<label for="place">अतिशय दीन</label><br>
+
+</br>
+</select>
+</div>
+</div>
+</div>
+
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>स्क्रीन प्लेसमेंट आणि दृश्यमानता माहितीसाठी बसस्थानकावर डिस्प्ले स्क्रीन आहे का?*</i></b></button>
+<br></br>
+
+<input type="radio" id="place" name="place" value="होय">
+<label for="place">होय</label><br>
+<input type="radio" id="place" name="place" value="नाही">
+<label for="place"> नाही</label><br>
+                                             
+</br>
+</select>
+</div>
+</div>
+</div>
+
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>होय असल्यास, स्क्रीन समोर आहे का:*</i></b></button>
+<br></br>
+
+<input type="radio" id="place" name="place" value="प्रवासी">
+<label for="place">प्रवासी</label><br>
+<input type="radio" id="place" name="place" value="जाणारे">
+<label for="place">जाणारे</label><br>
+<input type="radio" id="place" name="place" value="सहज दिसत नाही">
+<label for="place">सहज दिसत नाही</label><br>
+
+                                             
+</br>
+</select>
+</div>
+</div>
+</div>
+
+
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>बसस्थानकाचा खळ तुम्ही बसस्थानकाच्या आकाराचे वर्णन कसे कराल?*</i></b></button>
+<br></br>
+
+<input type="radio" id="place" name="place" value="लहान (मर्यादित आसन, काही खाडी)">
+<label for="place">लहान (मर्यादित आसन, काही खाडी)</label><br>
+<input type="radio" id="place" name="place" value="मध्यम (मध्यम आसन, आणखी काही खाडी)">
+<label for="place">मध्यम (मध्यम आसन, आणखी काही खाडी)</label><br>
+<input type="radio" id="place" name="place" value="मोठे (पुरेसे आसन, अनेक खाडी)">
+<label for="place">मोठे (पुरेसे आसन, अनेक खाडी)</label><br>
+
+                                             
+</br>
+</select>
+</div>
+</div>
+</div>
+
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>बसस्थानकाच्या आकारावर टिप्पण्या:</i></b></button>
+<br></br>
+
+<input type="text" class="form-control" id="Your Answer" name="answer" placeholder="Type Here ...." oninput="handleKeyPress(event)" fdprocessedid="9lh8rc">
+</br>
+</select>
+</div>
+</div>
+</div>
+<br>
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>गर्दीची सरासरी घनता तुम्ही या बसस्थानकावरील सरासरी गर्दीचे वर्णन कसे कराल?*</i></b></button>
+<br></br>
+
+<input type="radio" id="place" name="place" value="कमी (सरासरी ५०० पेक्षा कमी लोक)">
+<label for="place">लहान (मर्यादित आसन, काही खाडी)</label><br>
+<input type="radio" id="place" name="place" value="मध्यम (सरासरी १००० लोक)">
+<label for="place">मध्यम (सरासरी १००० लोक)</label><br>
+<input type="radio" id="place" name="place" value="उच्च (सरासरी १००० पेक्षा जास्त लोक)">
+<label for="place">उच्च (सरासरी १००० पेक्षा जास्त लोक)</label><br>
+
+                                             
+</br>
+</select>
+</div>
+</div>
+</div>
+<br>
+
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>विशिष्ट वेळा जेव्हा गर्दी जास्त असते:</i></b></button>
+<br></br>
+
+<input type="text" class="form-control" id="Your Answer" name="answer" placeholder="Type Here ...." oninput="handleKeyPress(event)" fdprocessedid="9lh8rc">
+</br>
+</select>
+</div>
+</div>
+</div>
+<br>
+
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>जवळपासचे व्यवसाय बसस्थानकाजवळ छोटे-मोठे व्यवसाय चालतात का?*</i></b></button>
+<br></br>
+
+<input type="radio" id="place" name="place" value="होय">
+<label for="place">होय</label><br>
+<input type="radio" id="place" name="place" value="नाही">
+<label for="place"> नाही</label><br>
+                                             
+</br>
+</select>
+</div>
+</div>
+</div>
+<br>
+
+
+
+<div class="form-holder select-row-holder" id="modal_header">
+<div class="row">
+<div class="col-md-3 mb-3">
+<button><b><i>होय असल्यास, जवळपास कोणत्या प्रकारचे व्यवसाय आहेत?*</i></b></button>
+<br></br>
+
+<input type="text" class="form-control" id="Your Answer" name="answer" placeholder="Type Here ...." oninput="handleKeyPress(event)" fdprocessedid="9lh8rc">
+                                             
+</br>
+</select>
+</div>
+</div>
+</div>
+<br>
+
+
+
+<input type="submit" class="submitButton" 
+               id="submitButton" value="Submit">
+
+<script>
+document.addEventListener(
+              'DOMContentLoaded', function () {
+            document.getElementById('submitButton').
+            addEventListener('click', function () {
+                alert('Submit button clicked!');
+            });
+
+</script>
+
+
+
+
+
+
+</form>
+
+</body>
+</html>
